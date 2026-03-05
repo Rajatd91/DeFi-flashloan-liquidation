@@ -1,0 +1,31 @@
+WARNING: You are using a version of Node.js that is not supported, and it may work incorrectly, or not work at all. See https://hardhat.org/nodejs-versions
+
+
+Error: missing revert data in call exception; Transaction reverted without a reason string [ See: https://links.ethers.org/v5-errors-CALL_EXCEPTION ] (data="0x", transaction={"from":"0x9694e4F88D53635D284BE77fbe58bb7524e02b99","gasLimit":{"type":"BigNumber","hex":"0x01bad9d8"},"to":"0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9","data":"0xbf92857c00000000000000000000000059ce4a2ac5bc3f5f225439b2993b86b42f6d3e9f","accessList":null}, error={"name":"HardhatError","_stack":"HardhatError: HH11: An internal invariant was violated: Tried to run a tx in the context of a non-existent block\n    at assertHardhatInvariant (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/core/errors.ts:272:11)\n    at HardhatNode._runTxAndRevertMutations (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/node.ts:2379:31)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at HardhatNode.runCall (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/node.ts:660:20)\n    at EthModule._callAction (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/modules/eth.ts:356:9)\n    at HardhatNetworkProvider.request (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:123:18)\n    at EthersProviderWrapper.send (/Users/rajat/decentralized-finance-cw/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20)","errorDescriptor":{"number":11,"message":"An internal invariant was violated: %message%","title":"Invariant violation","description":"An internal invariant was violated.\nThis is probably caused by a programming error in hardhat or in one of the used plugins.\n\nPlease [report it](https://github.com/nomiclabs/hardhat/issues/new) to help us improve Hardhat.","shouldBeReported":true},"number":11,"messageArguments":{"message":"Tried to run a tx in the context of a non-existent block"},"_isHardhatError":true}, code=CALL_EXCEPTION, version=providers/5.8.0)
+    at Logger.makeError (/Users/rajat/decentralized-finance-cw/node_modules/@ethersproject/logger/src.ts/index.ts:269:28)
+    at Logger.throwError (/Users/rajat/decentralized-finance-cw/node_modules/@ethersproject/logger/src.ts/index.ts:281:20)
+    at checkError (/Users/rajat/decentralized-finance-cw/node_modules/@ethersproject/providers/src.ts/json-rpc-provider.ts:66:16)
+    at EthersProviderWrapper.<anonymous> (/Users/rajat/decentralized-finance-cw/node_modules/@ethersproject/providers/src.ts/json-rpc-provider.ts:642:20)
+    at step (/Users/rajat/decentralized-finance-cw/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:48:23)
+    at Object.throw (/Users/rajat/decentralized-finance-cw/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:29:53)
+    at rejected (/Users/rajat/decentralized-finance-cw/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:21:65)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  reason: 'missing revert data in call exception; Transaction reverted without a reason string',
+  code: 'CALL_EXCEPTION',
+  data: '0x',
+  transaction: {
+    from: '0x9694e4F88D53635D284BE77fbe58bb7524e02b99',
+    gasLimit: BigNumber { _hex: '0x01bad9d8', _isBigNumber: true },
+    to: '0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9',
+    data: '0xbf92857c00000000000000000000000059ce4a2ac5bc3f5f225439b2993b86b42f6d3e9f',
+    accessList: null
+  },
+  error: HardhatError: HH11: An internal invariant was violated: Tried to run a tx in the context of a non-existent block
+      at assertHardhatInvariant (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/core/errors.ts:272:11)
+      at HardhatNode._runTxAndRevertMutations (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/node.ts:2379:31)
+      at processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at HardhatNode.runCall (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/node.ts:660:20)
+      at EthModule._callAction (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/modules/eth.ts:356:9)
+      at HardhatNetworkProvider.request (/Users/rajat/decentralized-finance-cw/node_modules/hardhat/src/internal/hardhat-network/provider/provider.ts:123:18)
+      at EthersProviderWrapper.send (/Users/rajat/decentralized-finance-cw/node_modules/@nomiclabs/hardhat-ethers/src/internal/ethers-provider-wrapper.ts:13:20)
+}
